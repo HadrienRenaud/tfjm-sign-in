@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/HadrienRenaud/tfjm-sign-in/issues"
   },
-  "homepage": "https://github.com/HadrienRenaud/tfjm-sign-in#readme"
+  "homepage": "https://github.com/HadrienRenaud/tfjm-sign-in#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "vue": "^2.5.21"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
 }
