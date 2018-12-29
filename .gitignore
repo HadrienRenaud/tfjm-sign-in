@@ -62,3 +62,8 @@ typings/
 
 # IDE
 .idea
+
+# Build files
+dist/*
+!dist/index.html
+
