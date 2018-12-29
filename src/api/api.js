@@ -1,5 +1,5 @@
 let login = function (req, res) {
-    res.redirect('/').end();
+    res.status(200).end();
 };
 
 

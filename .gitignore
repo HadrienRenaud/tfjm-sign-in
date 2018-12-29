@@ -67,3 +67,6 @@ typings/
 dist/*
 !dist/index.html
 
+# Temp files in Linux
+*.bak
+
