@@ -1,11 +1,13 @@
 var express = require('express');
 var routes = require('./routes');
+var api = require('./api/api');
 
 var app = express();
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 routes(app);
+api(app);
 app.set('views', './src/vue/pages');
 app.use('/dist', express.static('dist'));
 
