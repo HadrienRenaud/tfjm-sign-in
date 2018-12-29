@@ -1,0 +1,24 @@
+{
+  "name": "tfjm-sign-in",
+  "version": "0.0.1",
+  "description": "Sign-in site for TFJM",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HadrienRenaud/tfjm-sign-in.git"
+  },
+  "keywords": [
+    "tfjm",
+    "express",
+    "vue"
+  ],
+  "author": "Hadrien Renaud",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/HadrienRenaud/tfjm-sign-in/issues"
+  },
+  "homepage": "https://github.com/HadrienRenaud/tfjm-sign-in#readme"
+}
