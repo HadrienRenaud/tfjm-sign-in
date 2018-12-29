@@ -1,6 +1,13 @@
 module.exports = function(server) {
     // Defining all the routes
-    server.get('/', function (req, res) {
+
+    // Login
+    server.get('/login', function (req, res) {
         res.render('login.html');
     });
+
+    // Home
+    server.get('/', function (req, res) {
+        res.render('home.html');
+    })
 };
