@@ -70,3 +70,5 @@ dist/*
 # Temp files in Linux
 *.bak
 
+# config file
+configTemplate.js
