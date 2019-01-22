@@ -7,6 +7,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack",
+        "build:dev": "webpack --mode development",
         "start": "src/app.js"
     },
     "repository": {
@@ -25,13 +26,12 @@
     },
     "homepage": "https://github.com/HadrienRenaud/tfjm-sign-in#readme",
     "dependencies": {
+        "create-react-app": "^2.1.3",
         "css-loader": "^2.1.0",
         "express": "^4.16.4",
         "lodash": "^4.17.11",
         "mysql": "^2.16.0",
-        "vue": "^2.5.21",
-        "vue-loader": "^15.4.2",
-        "vue-template-compiler": "^2.5.21"
+        "semantic-ui": "^2.4.2"
     },
     "devDependencies": {
         "@babel/core": "^7.2.2",
