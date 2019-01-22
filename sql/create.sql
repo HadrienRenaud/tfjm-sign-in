@@ -60,6 +60,7 @@ CREATE TABLE IF NOT EXISTS `participants` (
   `sexe` TINYINT NULL,
   `code_postal` INT NULL,
   `adresse` TEXT NULL,
+  `participants` TEXT NULL,
   `ville_etabl` VARCHAR(255) NULL,
   `nom_etabl` VARCHAR(255) NULL,
   `classe` VARCHAR(45) NULL,

@@ -9,7 +9,7 @@ app.set('view engine', 'html');
 routes(app);
 api(app);
 app.set('views', './src/vue/pages');
-app.use('/dist', express.static('dist'));
+app.use('/', express.static('react-ui/dist'));
 
 
 app.listen(3000, function () {
