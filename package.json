@@ -2,12 +2,12 @@
   "name": "tfjm-sign-in",
   "version": "1.0.0",
   "description": "Site d'inscription du TFJM",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-      "dev": "next",
-      "build": "next build",
-      "start": "next start"
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
@@ -25,8 +25,16 @@
   },
   "homepage": "https://github.com/HadrienRenaud/tfjm-sign-in#readme",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "express": "^4.16.4",
+    "file-loader": "^3.0.1",
+    "mysql": "^2.16.0",
     "next": "^7.0.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0",
+    "url-loader": "^1.1.2"
   }
 }

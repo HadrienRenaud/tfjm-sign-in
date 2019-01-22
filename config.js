@@ -1,8 +1,8 @@
 module.exports = {
     mysql: {
         host: 'localhost',
-        user: 'tfjm-signin',
+        user: 'tfjmsignin',
         password: 'FYS7B0DVyO7K6Rvb',
-        database: 'tfjm-signin',
+        database: 'tfjmsignin',
     }
 };
