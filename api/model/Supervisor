@@ -1,16 +1,13 @@
 const knex = require('./database');
 
 class Participant {
-    static async getFromId(userId) {
-        return knex.schema
-    }
-
     static getAll() {
-        return knex.from('registered').select('*')
+        return knex.from('supervisors').select('*')
     }
 
     static getById(id) {
-        return knex.from('registered')
+        return knex
+            .from('supervisors')
             .select('*')
             .where('id', '=', id)
             .then((rows) => {
@@ -22,12 +19,12 @@ class Participant {
     }
 
     static getByTeam(team) {
-        return knex.from('registered').select('*').where('team', '=', team)
+        return knex.from('supervisors').select('*').where('team', '=', team)
     }
 
     static getTeamById(id) {
         return knex
-            .from('registered')
+            .from('supervisors')
             .select('team')
             .where('id', '=', id)
             .then((rows) => {
@@ -38,20 +35,7 @@ class Participant {
             })
     }
 
-    static authorizedKeys = [
-        "name",
-        "firstname",
-        "email",
-        "nom_resp",
-        "date_naissance",
-        "sexe",
-        "code_postal",
-        "adresse",
-        "ville_etabl",
-        "nom_etabl",
-        "classe",
-        "coord_resp"
-    ];
+    static authorizedKeys = ["name", "firstname", "email", "profession", "presence"]
 
     static updatable(participant) {
         let res = {};
@@ -64,9 +48,9 @@ class Participant {
     }
 
     static alterById(participant) {
-        return knex('registered')
+        return knex('supervisors')
             .where('id', '=', participant.id)
-            .update(Participant.updatable(participant))
+            .update(updatable(participant))
             .then((rows) => {
                 if (rows.length === 0)
                     return false;
@@ -76,14 +60,14 @@ class Participant {
     }
 
     static createById(participant) {
-        return knex('registered')
+        return knex('supervisors')
             .insert(participant)
             .then((rows) => {
-                if (rows.length === 0)
-                    return false;
-                else
-                    return rows[0];
-            })
+            if (rows.length === 0)
+                return false;
+            else
+                return rows[0];
+        })
     }
 }
 

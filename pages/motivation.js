@@ -21,8 +21,8 @@ class Motivation extends React.Component {
                 </Header>
 
                 <Form.Field>
-                    <label>Tu peux soit téléverser ta lettre de motivation comme un fichier .pdf</label>
-                    <Input type="file" name="motivation_file" accept=".application/pdf,.pdf"/>
+                    <label>Tu peux nous donner un lien public vers ta lettre de motivation*</label>
+                    <Input type="text" name="motivation_file"/>
                 </Form.Field>
 
                 <Form.Field>
