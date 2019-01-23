@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import {Container, Header, Menu} from "semantic-ui-react";
+import {Button, Container, Menu} from "semantic-ui-react";
 
 
 const MyHeader = () => (
@@ -8,31 +8,41 @@ const MyHeader = () => (
         <Container>
             <Menu.Menu position="left">
                 <Menu.Item>
+                    <Link href="https://tfjm.org">
+                        <a>TFJM²</a>
+                    </Link>
+                </Menu.Item>
+                <Menu.Item>
                     <Link href="/home">
-                        Home
+                        <a>Home</a>
                     </Link>
                 </Menu.Item>
                 <Menu.Item>
                     <Link href="/participants">
-                        Participants
+                        <a>Participants</a>
+                    </Link>
+                </Menu.Item>
+                <Menu.Item>
+                    <Link href="/encadrant">
+                        <a>Encadrant</a>
+                    </Link>
+                </Menu.Item>
+                <Menu.Item>
+                    <Link href="/motivation">
+                        <a>Motivation</a>
                     </Link>
                 </Menu.Item>
             </Menu.Menu>
-            <Menu.Header as="h3">
-                <Link href="https://tfjm.org">
-                    TFJM²
-                </Link>
-            </Menu.Header>
             <Menu.Menu position="right">
                 <Menu.Item>
                     <Link href="https://tfjm.org">
-                        Règlement
+                        <a>Règlement</a>
                     </Link>
                 </Menu.Item>
                 <Menu.Item>
-                    <Link href="/login">
+                    <Button href="/login" active>
                         Log Out
-                    </Link>
+                    </Button>
                 </Menu.Item>
             </Menu.Menu>
         </Container>

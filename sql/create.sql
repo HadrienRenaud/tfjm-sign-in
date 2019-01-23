@@ -34,9 +34,11 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `teams` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
-  `trigramme` VARCHAR(45) NOT NULL,
-  `password` NVARCHAR(550) NOT NULL,
-  `id_tournoi` INT UNSIGNED NOT NULL,
+  `trigramme` VARCHAR(45) NULL,
+  `motivation_text` TEXT NULL,
+  `motivation_file` MEDIUMBLOB NULL,
+  `password` VARCHAR(550) NOT NULL,
+  `id_tournoi` INT UNSIGNED NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_teams_tournoi1_idx` (`id_tournoi` ASC),
   CONSTRAINT `fk_teams_tournoi1`
